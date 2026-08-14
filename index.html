@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Patter Design System — Developer-First Neo-Brutalist Tokens</title>
   <meta name="description" content="Production-ready Neo-Brutalist design system for AI agents and developer tools. Pure black hard borders, Instrument Sans typography, JetBrains Mono telemetry, and signature peach accents." />
-  <link rel="canonical" href="https://imMamdouhaboammar.github.io/patter-design-system/" />
+  <link rel="canonical" href="https://immamdouhaboammar.github.io/patter-design-system/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -38,6 +38,7 @@
 
       <nav class="nav-links" aria-label="Main Navigation">
         <a class="nav-link" href="#tokens">Tokens</a>
+        <a class="nav-link" href="#agent-prompt">Agent Prompt</a>
         <a class="nav-link" href="#playground">Playground</a>
         <a class="nav-link" href="#components">Components</a>
         <a class="nav-link" href="#compare">Compare</a>
@@ -49,7 +50,7 @@
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.04 11.04 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.26 5.69.41.36.78 1.06.78 2.13 0 1.54-.01 2.78-.01 3.16 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12 24 5.65 18.85.5 12 .5z"/></svg>
           <span class="gh-text">GitHub</span>
         </a>
-        <a class="btn btn-primary" href="#get-started">Get Tokens →</a>
+        <a class="btn btn-primary" href="#agent-prompt">Copy Prompt 🤖</a>
       </div>
     </div>
   </header>
@@ -71,10 +72,17 @@
         Deterministic 1.5px hard borders, Instrument Sans typography, JetBrains Mono telemetry, and signature peach accents. Built for developer apps that refuse generic UI kits.
       </p>
 
+      <!-- Scaffolding and Install Row (npx / bunx / npm) -->
       <div class="hero-installs">
-        <button class="install-pill copy-btn" data-copy="npm install patter-design-system" id="btnCopyNpm">
-          <span class="lang ts">TS</span>
-          <code>npm install patter-design-system</code>
+        <button class="install-pill copy-btn" data-copy="bunx degit imMamdouhaboammar/patter-design-system patter-ds" id="btnCopyBunx">
+          <span class="lang bun">BUNX</span>
+          <code>bunx degit imMamdouhaboammar/patter-design-system patter-ds</code>
+          <span class="copy-ic">📋</span>
+        </button>
+
+        <button class="install-pill copy-btn" data-copy="npx degit imMamdouhaboammar/patter-design-system patter-ds" id="btnCopyNpx">
+          <span class="lang npx">NPX</span>
+          <code>npx degit imMamdouhaboammar/patter-design-system patter-ds</code>
           <span class="copy-ic">📋</span>
         </button>
 
@@ -159,6 +167,121 @@
       </div>
     </div>
   </div>
+
+  <!-- ======================== 🤖 1-CLICK AI CODING AGENT PROMPT ======================== -->
+  <section class="block prompt-section" id="agent-prompt">
+    <div class="container">
+      <div class="prompt-header">
+        <div>
+          <p class="section-eyebrow" style="color:var(--peach-deep);">Instant Agent Activation</p>
+          <h2 class="section-title">Apply Patter Theme to Any Project with 1-Click Prompt</h2>
+          <p class="section-sub" style="margin-bottom:24px;">
+            Copy this complete, decision-complete prompt and paste it into <strong>Claude Code</strong>, <strong>Cursor Composer</strong>, <strong>Antigravity</strong>, <strong>Windsurf</strong>, or <strong>Copilot</strong>.
+          </p>
+        </div>
+        <div class="prompt-header-action">
+          <button class="btn btn-primary btn-lg copy-btn" id="btnCopyPromptMain" data-copy="Apply the Patter Design System (Neo-Brutalist Technical Minimalism) to this project:
+
+1. TYPOGRAPHY:
+- Primary UI / Display Font: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif (import from Google Fonts).
+- Monospace / Code / Data Font: 'JetBrains Mono', ui-monospace, monospace.
+
+2. COLOR TOKENS:
+- Ink & Neutrals: #000000 (primary ink, borders, buttons), #1a1a1a (dark containers), #4a4a4a (body text), #aaaaaa (muted labels), #cbcbcb (faint comments/numbers), #eeeeee (1px dividers).
+- Surfaces: #ffffff (base canvas), #f6f6f4 (cream secondary background/cards), #fff8ef (warm accent background), #ebf0f5 (cool tech background), #fafaf8 (code pane background).
+- Signature Peach Accent: #df9367 (core accent & button hover), #c97a4c (deep accent text & code keywords), #efc5ac (light badge border), #fff8ef (peach-cream tags).
+- Status & Tech: #2ea043 (live green), #3b82f6 (cool blue).
+
+3. HARD NEO-BRUTALIST BORDERS & SHADOWS:
+- Use deterministic 1.5px and 2px solid #000000 borders on buttons, cards, tags, and inputs.
+- Replace soft/blurry drop shadows with crisp hard offset shadows:
+  * Buttons & Small Cards: `box-shadow: 0 4px 0 0 #000000;`
+  * Medium Cards: `box-shadow: 12px 12px 0 -1px #f6f6f4, 12px 12px 0 0 #000000;`
+  * Terminal/Window Mockups: `box-shadow: 0 16px 0 -8px #f6f6f4, 0 16px 0 -6px #000000;`
+
+4. TACTILE DOT-GRID TEXTURE:
+- Add a subtle 18px dot-grid texture on hero & dashboard containers:
+  `background-image: radial-gradient(circle at 1px 1px, #dad8de 1px, transparent 0); background-size: 18px 18px;` with radial mask.
+
+5. COMPONENT BLUEPRINTS:
+- Buttons: Pill shape (`border-radius: 999px`), 1.5px solid #000, font-weight 600. Primary button has black fill (`#000`), white text, and turns `#df9367` (peach) on hover.
+- Eyebrow Tags: Pill badges with 12px monospace uppercase text, 1.5px black border, and a 6px peach dot circle before the label.
+- Feature Grid: 3-column unified grid with 1.5px black outer border, 24px corner radius, and collapsed internal cell borders.
+
+Refactor the existing layout and stylesheet to strictly enforce this clean, high-density, neo-brutalist technical aesthetic.">
+            <span>📋 Copy AI Agent Prompt</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="prompt-box-card">
+        <div class="prompt-box-topbar">
+          <div class="prompt-dots"><i></i><i></i><i></i></div>
+          <span class="prompt-title">system-prompt.md · Click anywhere inside to copy</span>
+          <button class="btn btn-ghost copy-btn" data-copy="Apply the Patter Design System (Neo-Brutalist Technical Minimalism) to this project:
+
+1. TYPOGRAPHY:
+- Primary UI / Display Font: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif (import from Google Fonts).
+- Monospace / Code / Data Font: 'JetBrains Mono', ui-monospace, monospace.
+
+2. COLOR TOKENS:
+- Ink & Neutrals: #000000 (primary ink, borders, buttons), #1a1a1a (dark containers), #4a4a4a (body text), #aaaaaa (muted labels), #cbcbcb (faint comments/numbers), #eeeeee (1px dividers).
+- Surfaces: #ffffff (base canvas), #f6f6f4 (cream secondary background/cards), #fff8ef (warm accent background), #ebf0f5 (cool tech background), #fafaf8 (code pane background).
+- Signature Peach Accent: #df9367 (core accent & button hover), #c97a4c (deep accent text & code keywords), #efc5ac (light badge border), #fff8ef (peach-cream tags).
+- Status & Tech: #2ea043 (live green), #3b82f6 (cool blue).
+
+3. HARD NEO-BRUTALIST BORDERS & SHADOWS:
+- Use deterministic 1.5px and 2px solid #000000 borders on buttons, cards, tags, and inputs.
+- Replace soft/blurry drop shadows with crisp hard offset shadows:
+  * Buttons & Small Cards: `box-shadow: 0 4px 0 0 #000000;`
+  * Medium Cards: `box-shadow: 12px 12px 0 -1px #f6f6f4, 12px 12px 0 0 #000000;`
+  * Terminal/Window Mockups: `box-shadow: 0 16px 0 -8px #f6f6f4, 0 16px 0 -6px #000000;`
+
+4. TACTILE DOT-GRID TEXTURE:
+- Add a subtle 18px dot-grid texture on hero & dashboard containers:
+  `background-image: radial-gradient(circle at 1px 1px, #dad8de 1px, transparent 0); background-size: 18px 18px;` with radial mask.
+
+5. COMPONENT BLUEPRINTS:
+- Buttons: Pill shape (`border-radius: 999px`), 1.5px solid #000, font-weight 600. Primary button has black fill (`#000`), white text, and turns `#df9367` (peach) on hover.
+- Eyebrow Tags: Pill badges with 12px monospace uppercase text, 1.5px black border, and a 6px peach dot circle before the label.
+- Feature Grid: 3-column unified grid with 1.5px black outer border, 24px corner radius, and collapsed internal cell borders.
+
+Refactor the existing layout and stylesheet to strictly enforce this clean, high-density, neo-brutalist technical aesthetic." style="font-size:12px; padding:4px 10px;">Copy</button>
+        </div>
+        <div class="prompt-box-content">
+          <pre><code><span class="kw">Apply the Patter Design System (Neo-Brutalist Technical Minimalism) to this project:</span>
+
+<span class="c">1. TYPOGRAPHY:</span>
+- Primary UI / Display Font: <span class="s">'Instrument Sans'</span>, ui-sans-serif, system-ui, sans-serif (Google Fonts).
+- Monospace / Code / Data Font: <span class="s">'JetBrains Mono'</span>, ui-monospace, monospace.
+
+<span class="c">2. COLOR TOKENS:</span>
+- Ink &amp; Neutrals: <span class="fn">#000000</span> (primary ink, borders, buttons), <span class="fn">#1a1a1a</span> (dark containers), <span class="fn">#4a4a4a</span> (body text), <span class="fn">#aaaaaa</span> (muted labels), <span class="fn">#eeeeee</span> (1px dividers).
+- Surfaces: <span class="fn">#ffffff</span> (base canvas), <span class="fn">#f6f6f4</span> (cream secondary cards), <span class="fn">#fff8ef</span> (warm accent), <span class="fn">#fafaf8</span> (code panes).
+- Signature Peach: <span class="fn">#df9367</span> (core accent &amp; button hover), <span class="fn">#c97a4c</span> (deep accent text &amp; keywords), <span class="fn">#efc5ac</span> (badge borders), <span class="fn">#fff8ef</span> (peach tags).
+
+<span class="c">3. HARD NEO-BRUTALIST BORDERS &amp; SHADOWS:</span>
+- Use deterministic <span class="kw">1.5px and 2px solid #000000</span> borders on buttons, cards, tags, and inputs.
+- Replace soft blurry shadows with hard offset shadows:
+  * Buttons/Pills: <span class="s">`box-shadow: 0 4px 0 0 #000000;`</span>
+  * Medium Cards: <span class="s">`box-shadow: 12px 12px 0 -1px #f6f6f4, 12px 12px 0 0 #000000;`</span>
+  * Mockups: <span class="s">`box-shadow: 0 16px 0 -8px #f6f6f4, 0 16px 0 -6px #000000;`</span>
+
+<span class="c">4. TACTILE DOT-GRID TEXTURE:</span>
+- Add subtle 18px dot-grid texture on hero &amp; dashboard containers:
+  <span class="s">`background-image: radial-gradient(circle at 1px 1px, #dad8de 1px, transparent 0); background-size: 18px 18px;`</span>
+
+<span class="c">5. COMPONENT BLUEPRINTS:</span>
+- Buttons: Pill shape (`border-radius: 999px`), 1.5px solid #000. Black fill (`#000`), turns `#df9367` on hover.
+- Eyebrow Tags: Pill badges with monospace uppercase text and a 6px peach circle dot before text.
+- Feature Grid: 3-column unified grid with 1.5px black outer border, 24px radius, and collapsed internal borders.
+
+Refactor the existing layout and stylesheet to strictly enforce this clean, high-density, neo-brutalist technical aesthetic.</code></pre>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ======================== INTERACTIVE PLAYGROUND ======================== -->
   <section class="block cream" id="playground">
